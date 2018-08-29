@@ -133,6 +133,9 @@ header#top > .content > #menu > a:focus {
 	font-size: 18px;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+.parallax-image > .text > .spacing {
 	letter-spacing: 0.15em;
 }
 
@@ -172,6 +175,7 @@ header#top > .content > #menu > a:focus {
 }
 
 .catalogo .item {
+	position: relative;
 	padding: 15px;
 }
 .catalogo > a .item {
@@ -188,6 +192,31 @@ header#top > .content > #menu > a:focus {
 	margin-bottom: 8px;
 }
 
+.catalogo .item > .promo {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: -8px;
+	padding: 3px 10px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: white;
+	background: #b22222;
+}
+
+.catalogo .item > .promo::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border-top: 4px solid #5f1313;
+	border-right: 4px solid #5f1313;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: '';
+}
+
 .catalogo .item > h4 {
 	font-size: 18px;
 	color: #272760;
@@ -197,26 +226,38 @@ header#top > .content > #menu > a:focus {
 	font-size: 14px;
 }
 
-.catalogo .item > span.preco {
+.catalogo .item > .preco {
 	display: block;
 	font-weight: 400;
 	text-align: right;
 }
 
-.catalogo .item > span.preco > span.moeda {
-	margin-right: 5px;
-	font-size: 12px;
+.catalogo .item > .preco > span {
+	display: inline-block;
+}
+.catalogo .item > .preco > span.de {
+	margin-right: 20px;
+	font-size: 10px;
+	opacity: 0.6;
+}
+.catalogo .item > .preco > span.por {
+	font-size: 16px;
 }
 
-.catalogo .item > span.preco > span.valor {
-	font-size: 32px;
+.catalogo .item > .preco > span > span.moeda {
+	margin-right: 5px;
+	font-size: 0.75em;
+}
+
+.catalogo .item > .preco > span > span.valor {
+	font-size: 2em;
 	line-height: 1.2em;
 	color: #272760;
 }
 
-.catalogo .item > span.preco > span.valor > small {
+.catalogo .item > .preco > span > span.valor > small {
 	margin-left: 2px;
-	font-size: 20px;
+	font-size: 0.6em;
 	vertical-align: top;
 }
 
