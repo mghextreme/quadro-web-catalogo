@@ -1,0 +1,244 @@
+/* ######## PRINCIPAL ######## */
+
+body {
+	font-family: 'Montserrat', 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+}
+
+.content {
+	width: 800px;
+}
+
+.content.padding {
+	padding: 15px 20px;
+}
+
+.content.padding > h1 {
+	font-size: 24px;
+	color: #272760;
+}
+
+.content.padding > p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #444;
+}
+
+.padding-y {
+	padding: 30px 0;
+}
+
+.center {
+	text-align: center;
+}
+
+/* ######## CORES ######## */
+
+.light {
+	display: block;
+	color: #111;
+	background: #eee;
+}
+
+.gray {
+	display: block;
+	color: #111;
+	background: #ddd;
+}
+
+.dark {
+	display: block;
+	color: white;
+	background: #24242e;
+}
+
+/* ######## TOPO ######## */
+
+header#top > .content {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+}
+
+header#top > .content > h2 {
+	margin: 0;
+	font-size: 28px;
+}
+
+header#top > .content > #menu {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
+	margin: 0;
+}
+
+header#top > .content > #menu > a {
+	display: inline-block;
+	padding: 5px 14px;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 30px;
+	background: rgba(255, 255, 255, 0.05);
+	transition: background 200ms linear;
+}
+
+header#top > .content > #menu > a:hover,
+header#top > .content > #menu > a:focus {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/* ######## PARALLAX ######## */
+
+.parallax-image {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-content: center;
+	justify-content: center;
+	min-height: 280px;
+	background: center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	box-shadow: inset 0 1px 6px 0 rgba(0, 0, 0, 0.9);
+}
+
+.parallax-image.home {
+	background-image: url('img/parallax-home.jpg');
+}
+
+.parallax-image > .text {
+	padding: 50px 0;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.parallax-image > .text > h1 {
+	font-size: 72px;
+	line-height: 1em;
+}
+
+.parallax-image > .text > h3 {
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+
+.parallax-image > .text > a {
+	display: block;
+	width: 300px;
+	padding: 15px 0;
+	margin-top: 20px;
+	text-transform: uppercase;
+	background: rgba(36, 36, 46, 0.8);
+	transition: background 200ms linear;
+}
+
+.parallax-image > .text > a:hover,
+.parallax-image > .text > a:focus {
+	background: rgba(36, 36, 46, 1);
+}
+
+/* ######## CATÁLOGO ######## */
+
+.catalogo {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+	justify-content: flex-start;
+	margin-top: 10px;
+}
+
+.catalogo > a {
+	flex: 0 1 auto;
+	display: block;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 10px;
+	margin: 0;
+}
+
+.catalogo .item {
+	padding: 15px;
+}
+.catalogo > a .item {
+	transition: box-shadow 200ms linear;
+}
+.catalogo > a:hover .item,
+.catalogo > a:focus .item {
+	box-shadow: 0 0 6px 0 rgba(36, 36, 46, 0.6);
+}
+
+.catalogo .item > img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 8px;
+}
+
+.catalogo .item > h4 {
+	font-size: 18px;
+	color: #272760;
+}
+
+.catalogo .item > p {
+	font-size: 14px;
+}
+
+.catalogo .item > span.preco {
+	display: block;
+	font-weight: 400;
+	text-align: right;
+}
+
+.catalogo .item > span.preco > span.moeda {
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+.catalogo .item > span.preco > span.valor {
+	font-size: 32px;
+	line-height: 1.2em;
+	color: #272760;
+}
+
+.catalogo .item > span.preco > span.valor > small {
+	margin-left: 2px;
+	font-size: 20px;
+	vertical-align: top;
+}
+
+/* ######## RODAPÉ ######## */
+
+footer#bottom {
+	padding: 20px 0;
+	font-size: 14px;
+}
+
+footer#bottom > p {
+	color: #7b7b91;
+}
+
+footer#bottom a {
+	display: inline-block;
+	border-bottom: 1px solid #7b7b91;
+	transition: all 200ms linear;
+}
+
+footer#bottom a:hover,
+footer#bottom a:focus {
+	color: white;
+	border-bottom-color: white;
+}
