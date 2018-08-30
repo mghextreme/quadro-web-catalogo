@@ -27,10 +27,47 @@ h6 {
 	color: #272760;
 }
 
+.content.padding > h3 {
+	font-size: 20px;
+	color: #272760;
+}
+
+.content.padding > h3 {
+	font-size: 18px;
+	color: #272760;
+}
+
+.content.padding > p + h1,
+.content.padding > p + h2,
+.content.padding > p + h3 { margin-top: 15px; }
+
 .content.padding > p {
 	font-size: 14px;
 	font-weight: 400;
 	color: #444;
+}
+
+.content.padding ul {
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #444;
+}
+
+.content.padding ul > li {
+	position: relative;
+	padding: 2px 0 2px 12px;
+}
+
+.content.padding ul > li::before {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #272760;
+	content: '';
 }
 
 .padding-y {
@@ -123,6 +160,7 @@ body#contato header#top > .content > #menu > a.contato {
 }
 .parallax-image.home { background-image: url('img/parallax-home.jpg'); }
 .parallax-image.promocoes { background-image: url('img/parallax-promocoes.jpg'); }
+.parallax-image.sobre { background-image: url('img/parallax-sobre.jpg'); }
 
 .parallax-image > .text {
 	padding: 50px 0;
