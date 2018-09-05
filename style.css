@@ -164,6 +164,7 @@ body#contato header#top > .content > #menu > a.contato {
 .parallax-image.sobre { background-image: url('img/parallax-sobre.jpg'); }
 
 .parallax-image > .text {
+	position: relative;
 	padding: 40px 0;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -206,6 +207,25 @@ body#contato header#top > .content > #menu > a.contato {
 .parallax-image > .text > a:hover,
 .parallax-image > .text > a:focus {
 	background: rgba(36, 36, 46, 1);
+}
+
+.parallax-image > .text > .promo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	box-sizing: border-box;
+	height: 42px;
+	padding: 7px 15px 5px 15px;
+	margin: auto 0 auto auto;
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: white;
+	background: #b22222;
+	box-shadow: 0 0 3px 0 rgba(36, 36, 46, 0.7);
 }
 
 /* ######## CATÁLOGO ######## */
