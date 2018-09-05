@@ -162,6 +162,7 @@ body#contato header#top > .content > #menu > a.contato {
 .parallax-image.home { background-image: url('img/parallax-home.jpg'); }
 .parallax-image.promocoes { background-image: url('img/parallax-promocoes.jpg'); }
 .parallax-image.sobre { background-image: url('img/parallax-sobre.jpg'); }
+.parallax-image.contato { background-image: url('img/parallax-contato.jpg'); }
 
 .parallax-image > .text {
 	position: relative;
@@ -387,6 +388,83 @@ body#contato header#top > .content > #menu > a.contato {
 .content.detalhes > .informacoes > li > span {
 	font-size: 14px;
 	color: #444;
+}
+
+/* ######## CONTATO ######## */
+
+.content.contato > h3 {
+	margin-top: 10px;
+}
+
+.content.contato > ul.bullets {
+	padding-top: 5px;
+}
+
+.content.contato > ul.bullets > li {
+	margin: 5px 0;
+}
+
+.content.contato > ul > li a {
+	display: inline-block;
+	border-bottom: 1px solid #272760;
+	color: #272760;
+	transition: opacity 200ms linear;
+}
+.content.contato > ul > li a:hover {
+	opacity: 0.7;
+}
+
+.content.contato > form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	text-align: left;
+}
+
+.content.contato > form fieldset {
+	flex: 1 1 auto;
+	width: 100%;
+	padding: 10px 15px;
+	margin: 0;
+}
+.content.contato > form fieldset.half { width: 50%; }
+
+.content.contato > form fieldset > legend {
+	padding: 2px 5px;
+	margin: 0 auto 0 5px;
+	font-size: 14px;
+	color: #272760;
+}
+
+.content.contato > form fieldset > input,
+.content.contato > form fieldset > textarea {
+	width: 100%;
+	padding: 10px 15px;
+	margin-top: -8px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #272760;
+	background: white;
+}
+.content.contato > form fieldset > textarea {
+	min-height: 130px;
+	height: 130px;
+	resize: vertical;
+}
+
+.content.contato > form input[type=submit] {
+	flex: 0 0 auto;
+	display: block;
+	padding: 10px 15px;
+	margin: 15px 15px 15px auto;
+	text-transform: uppercase;
+	color: white;
+	background: rgba(36, 36, 46, 0.8);
+	transition: background 200ms linear;
+}
+.content.contato > form input[type=submit]:hover,
+.content.contato > form input[type=submit]:focus {
+	background: rgba(36, 36, 46, 1);
 }
 
 /* ######## RODAPÉ ######## */

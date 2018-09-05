@@ -15,7 +15,7 @@
 
 @-ms-viewport { width: device-width; }
 
-ul, ol, li, div, form, article, aside, details, figcaption, figure, footer, header, hgroup, img, menu, nav, section, label, input, select, textarea, blockquote, img, textarea, p { display: block; box-sizing: border-box; }
+ul, ol, li, div, form, article, aside, details, fieldset, figcaption, figure, footer, header, hgroup, img, menu, nav, section, label, input, select, textarea, blockquote, img, textarea, p { display: block; box-sizing: border-box; }
 
 ul, ol, li {
 	list-style: none;
